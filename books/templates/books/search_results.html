@@ -1,0 +1,30 @@
+{% extends 'books/base_books.html' %}
+
+
+{% block content %}
+<h2>Resultados de la Búsqueda</h2>
+{% if results %}
+    <div class="row">
+        {% for book in results %}
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img class="card-img-top" src="{{ book.thumbnail }}" alt="Cover Image">
+                <div class="card-body">
+                    <h5 class="card-title">{{ book.title }}</h5>
+                    {% if book.pdf %}
+                    <a href="{{ book.pdf }}" class="btn btn-success" download>Descargar PDF</a>
+                    {% endif %}
+                    {% if book.infoLink %}
+                    <a href="{{ book.infoLink }}" class="btn btn-primary">Más información</a>
+                    {% else %}
+                    <button class="btn btn-secondary disabled">Información no disponible</button>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+{% else %}
+    <p>No se encontraron libros.</p>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends 'books/base_books.html' %}
+
+
+{% block content %}
+<div class="container mt-4">
+    <div class="row">
+        {% for book in books %}
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img class="card-img-top" src="{{ book.volumeInfo.imageLinks.thumbnail }}" alt="Cover Image">
+                <div class="card-body">
+                    <h5 class="card-title">{{ book.volumeInfo.title }}</h5>
+                    <p class="card-text">{{ book.volumeInfo.description|default:"No description available"|truncatewords:20 }}</p>
+                    <a href="{{ book.volumeInfo.infoLink }}" class="btn btn-primary" target="_blank">Más información</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

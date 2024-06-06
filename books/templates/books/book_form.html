@@ -1,0 +1,10 @@
+{% extends 'books/base_books.html' %}
+
+{% block content %}
+<h2>{% if book_id %}Edit Book{% else %}Add Book{% endif %}</h2>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Save</button>
+</form>
+{% endblock %}

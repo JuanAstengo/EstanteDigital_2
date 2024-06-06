@@ -1,0 +1,10 @@
+{% extends 'books/base_books.html' %}
+
+{% block content %}
+<h2>{% if author_id %}Editar Autor{% else %}Crear Autor{% endif %}</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Guardar</button>
+</form>
+{% endblock %}
