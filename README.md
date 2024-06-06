@@ -23,8 +23,3 @@ Configuración del proyecto
 
 git clone https://github.com/JuanAstengo/Proyecto-final-Astengo.git
 cd Proyecto-final-Astengo
-
-Usuario Administrator
-
-User: Admin 
-Password: 780qwki1
