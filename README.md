@@ -6,20 +6,14 @@ EstanteDigital es una aplicación web desarrollada con Django que simula una bib
 
 Funcionalidades
 
-. Autenticación de usuarios: Inicio de sesión y registro de usuarios.
-. Gestión de libros: Los usuarios pueden crear, modificar y eliminar libros.
-. Búsqueda de libros: Integración con la API de Google Books para buscar libros y mostrar detalles.
-. Interfaz de administración: Administración del sitio para gestionar usuarios y contenidos del sitio.
+. Autenticación de usuarios: Inicio de sesión y registro de usuarios. . Gestión de libros: Los usuarios pueden crear, modificar y eliminar libros. . Búsqueda de libros: Integración con la API de Google Books para buscar libros y mostrar detalles. . Interfaz de administración: Administración del sitio para gestionar usuarios y contenidos del sitio.
 
 Tecnologías utilizadas
 
-Backend: Django (Python)
-Base de datos: SQLite (desarrollo), PostgreSQL (producción)
-Frontend: HTML, CSS, Bootstrap
+Backend: Django (Python) Base de datos: SQLite (desarrollo), PostgreSQL (producción) Frontend: HTML, CSS, Bootstrap
 
 Configuración del proyecto
 
 1 . Clona el repositorio:
 
-git clone https://github.com/JuanAstengo/Proyecto-final-Astengo.git
-cd Proyecto-final-Astengo
+git clone https://github.com/JuanAstengo/Proyecto-final-Astengo.git cd Proyecto-final-Astengo
