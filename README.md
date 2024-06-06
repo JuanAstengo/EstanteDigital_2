@@ -3,6 +3,10 @@
 ## Descripción
 EstanteDigital es una aplicación web desarrollada con Django que simula una biblioteca digital, permitiendo a los usuarios buscar, ver, y gestionar libros. Inspirada en la funcionalidad básica de plataformas como Netflix, pero enfocada en libros.
 
+## Video con la muestra en funcionamiento
+
+[text](https://youtu.be/xNAUmS1NDCk)
+
 ## Funcionalidades
 - **Autenticación de usuarios:** Inicio de sesión y registro de usuarios.
 - **Gestión de libros:** Los usuarios pueden crear, modificar y eliminar libros.
