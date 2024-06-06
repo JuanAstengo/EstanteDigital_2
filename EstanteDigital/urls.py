@@ -1,5 +1,3 @@
-# EstanteDigital/urls.py
-
 from django.contrib import admin
 from django.urls import path, include
 from django.views.generic import RedirectView
@@ -13,11 +11,10 @@ urlpatterns = [
     path('books/', include('books.urls')),
     path('accounts/login/', auth_views.LoginView.as_view(template_name='accounts/login.html'), name='login'),
     path('accounts/logout/', auth_views.LogoutView.as_view(next_page='/accounts/login/'), name='logout'),
-    path('', RedirectView.as_view(url='/accounts/login/')),  # Asegura que la redirección al login sea explícita
-    path('', include('django.contrib.auth.urls')),  # Incluye las URLs de autenticación por defecto
+    path('', RedirectView.as_view(url='/accounts/login/')),
+    path('', include('django.contrib.auth.urls')),
 ]
 
-# Añadir esta parte para servir archivos estáticos y de media durante el desarrollo
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

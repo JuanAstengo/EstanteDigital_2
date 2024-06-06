@@ -22,7 +22,7 @@ class Book(models.Model):
     publish_date = models.DateField()
     cover = models.ImageField(upload_to='covers/', blank=True, null=True)
     pdf = models.FileField(upload_to='pdfs/', blank=True, null=True)
-    infoLink = models.URLField(blank=True, null=True)  # Asegúrate de que este campo está aquí
+    infoLink = models.URLField(blank=True, null=True)
 
     def __str__(self):
         return self.title
