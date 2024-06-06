@@ -5,7 +5,7 @@ EstanteDigital es una aplicación web desarrollada con Django que simula una bib
 
 ## Video con la muestra en funcionamiento
 
-[text](https://youtu.be/xNAUmS1NDCk)
+[EstanteDigital en YouTube](https://youtu.be/xNAUmS1NDCk)
 
 ## Funcionalidades
 - **Autenticación de usuarios:** Inicio de sesión y registro de usuarios.
